@@ -1,7 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Main from './Main';
 import LoadingPg from './assets/Loading/LoadingPg';
+import Main from './Main';
+
 
 
 const Page = () => {
@@ -21,7 +22,7 @@ const Page = () => {
       {isLoading ? (
         <LoadingPg/>
       ) : (
-        <Main />
+        <Main/>
       )}
     </>
   );

@@ -31,6 +31,14 @@ const BatteryAndImage = () => {
 
   return (
     <div className="flex items-center justify-center gap-6">
+       {/* Rotating Image */}
+      <div className="w-27 h-27 rounded-xl overflow-hidden shadow-lg border border-white/20 hover:scale-105 transition-transform duration-300">
+        <img
+          src={images[currentImage]}
+          alt="Visual"
+          className="object-cover w-full h-full hover:grayscale-0 transition-all duration-500"
+        />
+      </div>
       {/* Battery Widget */}
       <div className="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center w-24 h-28">
         {/* Circular Progress Indicator */}
@@ -59,6 +67,7 @@ const BatteryAndImage = () => {
               className="transition-all duration-500 ease-out"
             />
           </svg>
+
           {/* Icon in center */}
           <div className="absolute inset-0 flex items-center justify-center">
             <FaTabletAlt className="text-gray-700 text-lg" />
@@ -68,14 +77,7 @@ const BatteryAndImage = () => {
         <span className="text-md font-semibold text-gray-800">{batteryLevel}%</span>
       </div>
 
-      {/* Rotating Image */}
-      <div className="w-27 h-27 rounded-xl overflow-hidden shadow-lg border border-white/20 hover:scale-105 transition-transform duration-300">
-        <img
-          src={images[currentImage]}
-          alt="Visual"
-          className="object-cover w-full h-full hover:grayscale-0 transition-all duration-500"
-        />
-      </div>
+     
     </div>
   );
 };

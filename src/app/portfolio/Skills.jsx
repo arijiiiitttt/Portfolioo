@@ -6,7 +6,7 @@ const items = [
   "python",
   "html",
   "nodejs",
-  "java",
+  "firebase",
   "mongodb",
   "css",
   "bluej",
@@ -57,7 +57,7 @@ const Skills = () => {
               key={i}
               src={`items/${logo}.png`}
               alt={logo}
-              className="h-[100px] w-[100px] md:h-[120px] md:w-[120px] lg:h-[137px] lg:w-[137px] object-contain px-2 sm:px-4 inline-block"
+              className="h-[100px] w-[100px] md:h-[120px] md:w-[120px] lg:h-[137px] lg:w-[137px] object-contain px-1 sm:px-4 inline-block"
             />
           ))}
         </div>

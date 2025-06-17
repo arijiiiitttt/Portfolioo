@@ -4,8 +4,8 @@ const projectsData = [
   {
     id: 1,
     title: "E-Commerce Platform",
-    headerVideo: "./video/gg.mp4", // Replace with your video URL
-    avatarImage: "./logos/a.png", // Placeholder avatar for consistency
+    headerVideo: "./video/", // Replace with your video URL
+    avatarImage: "", // Placeholder avatar for consistency
     description:
       "A comprehensive online store built with React for the frontend and Node.js for the backend. Features include user authentication, product listings, shopping cart, and secure payment processing.",
     live: true,
@@ -155,7 +155,7 @@ const Projects = () => {
                         className={`inline-block w-2.5 h-2.5 rounded-full ml-1.5 ${ // Slightly reduced size and margin
                           project.live ? "bg-green-500 animate-pulse-slow" : "bg-red-500"
                         }`}
-                        title={project.live ? "Live Project" : "Offline Demo"}
+                        title={project.live ? "Live Project" : "Website Not Available"}
                       ></span>
                     </h2>
                     {/* GitHub Icon at the end of the title line - Improved hover effect */}

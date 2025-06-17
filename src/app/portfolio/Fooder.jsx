@@ -7,9 +7,10 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
-            src=""
+            src="./logos/arijit.png"
             alt="Logo"
-            className="w-14 md:w-15 lg:w-20"
+            className="w-20 h-auto sm:w-20 md:w-22 lg:w-28 xl:w-40 max-w-none" // Responsive image sizing
+            style={{ maxWidth: 'none' }} // Override any potential max-width from parent
           />
         </div>
 
@@ -50,7 +51,7 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <p className="mt-6 text-center text-sm text-gray-900">
-        © {new Date().getFullYear()}  Made With 💖 by arijiiiitttt
+        © {new Date().getFullYear()} Made With 💖 by arijiiiitttt
       </p>
     </footer>
   );

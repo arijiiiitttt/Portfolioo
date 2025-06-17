@@ -22,9 +22,14 @@ const MobileView = () => {
         <h1 className="text-2xl font-bold text-red-600 mb-1">
           Webpage not available
         </h1>
-        <p className="text-gray-600 text-sm md:text-base">
+        <p className="text-gray-600 text-sm md:text-base mb-4">
           Please switch to a larger screen device (tablet or desktop).
         </p>
+
+        {/* Button to go to portfolio */}
+        <a href="/portfolio" className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-full">
+          OK, Go to Portfolio
+        </a>
       </div>
     </div>
   );
