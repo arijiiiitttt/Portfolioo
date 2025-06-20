@@ -28,7 +28,7 @@ const ParentDiv = ({ onBackgroundChange }) => {
         <div></div>
       </div>
       <div className='h-135 flex flex-col justify-center items-center w-2/5 bg-pink-500'>
-        <img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" />
+        <ImageScrollBig />
 
         <ImageScrollOne />
         <ImageScrollTwo />
@@ -36,13 +36,13 @@ const ParentDiv = ({ onBackgroundChange }) => {
 
       <div className='h-135 flex flex-col justify-center gap-y-4 items-center w-1/3 bg-gray-500'>
         <MusicPlayer />
-        <div className='flex flex-row justify-center items-center gap-x-3'> {/* Added justify-center and items-center */}
-          <img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" />
+        <div className='flex flex-row justify-center items-center gap-x-5'> {/* Added justify-center and items-center */}
+          <img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" />
           {/* Background Changer Button */}
-          <div className="relative mt-4">
+          <div className="relative">
             <button
               onClick={() => setShowBgOptions(!showBgOptions)}
-              className="p-3 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition-all"
+              className="rounded-full bg-opacity-20 hover:bg-opacity-40 transition-all"
               aria-label="Change background"
             >
               <img
@@ -77,8 +77,17 @@ const ParentDiv = ({ onBackgroundChange }) => {
 
           <img src="./icons/youtube.webp" alt="icon" className=" bg-white  rounded-xl w-12 h-12 hover:" />
           <img src="./icons/gmail.png" alt="icon" className="h-12 w-12 rounded-lg bg-white hover:" />
+          
         </div>
-        <ImageScrollBig />
+<div className='flex flex-row'>
+  <img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" />
+</div>
+
+
+
+
+
+
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import { playHover } from './playHover';
 import Projects from './Projects';
 import { motion } from 'framer-motion';
 import Contact from './Contact';
-import Footer from './Fooder';
+import Footer from './Footer'; // Corrected typo
 import FAQ from './FAQ';
 import { useState, useEffect, useRef } from "react";
 import FrontPg from './FrontPg';
@@ -22,7 +22,6 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      // Reduce or remove duration if conflicting with horizontal scroll
       duration: 0.3
     }
   }
@@ -34,7 +33,7 @@ const itemVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.3 // Reduce or remove duration
+      duration: 0.3
     }
   }
 };
@@ -44,7 +43,7 @@ const fadeInVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.5 // Reduce or remove duration
+      duration: 0.5
     }
   }
 };
@@ -121,7 +120,7 @@ const Main = () => {
     }, [isMenuOpen]); // Re-run effect if isMenuOpen changes
 
   return (
-    <div className="w-full h-full"> {/* Ensure Main takes full width and height */}
+    <div className="w-full h-full flex flex-col gap-20"> {/* Increased gap to 20 */}
       {/*-------------------------Navbar------------------------*/}
       {/* The main navigation container, fixed at the top and centered horizontally */}
         <nav className="fixed w-full z-50 flex justify-center py-6 md:py-8" id="homePg">
@@ -147,16 +146,16 @@ const Main = () => {
                         transition-opacity duration-300 ${showToast ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                         // pointer-events-none prevents the toast from blocking clicks when hidden
                     > 👋🏼
-                    </span> 
+                    </span>
                 </a>
 
                 {/* Desktop and Tablet Navigation Items - hidden on small screens, visible from medium screens up */}
                 <div className="hidden md:flex items-center space-x-10 text-gray-800 text-xl font-light">
-                    <a href="#" onClick={closeMenu} className="hover:text-gray-600 transition-colors">About</a>
-                    <a href="#" onClick={closeMenu} className="hover:text-gray-600 transition-colors">Projects</a>
+                    <a href="#aboutt" onClick={closeMenu} className="hover:text-gray-600 transition-colors">About</a>
+                    <a href="#projectt" onClick={closeMenu} className="hover:text-gray-600 transition-colors">Projects</a>
 
                     <a href="/underprocess" onClick={closeMenu} className="hover:text-gray-600 transition-colors">Blog</a>
-                    <a href="#" onClick={closeMenu} className="hover:text-gray-600 transition-colors">FAQs</a>
+                    <a href="#faqq" onClick={closeMenu} className="hover:text-gray-600 transition-colors">FAQs</a>
                 </div>
 
                 {/* Desktop and Tablet Email Button - hidden on small screens, visible from medium screens up */}
@@ -193,16 +192,16 @@ const Main = () => {
                     <ul className="flex flex-col gap-10 text-3xl font-light text-center text-gray-800">
                         {/* Mobile navigation links */}
                         <li className="my-4">
-                            <a href="" onClick={closeMenu} className="hover:text-gray-700 transition-colors">About</a>
+                            <a href="#aboutt" onClick={closeMenu} className="hover:text-gray-700 transition-colors">About</a>
                         </li>
                         <li className="my-4">
-                            <a href="" onClick={closeMenu} className="hover:text-gray-700 transition-colors">Projects</a>
+                            <a href="#projectt" onClick={closeMenu} className="hover:text-gray-700 transition-colors">Projects</a>
                         </li>
                         <li className="my-4">
                             <a href="/underprocess" onClick={closeMenu} className="hover:text-gray-700 transition-colors">Blog</a>
                         </li>
                         <li className="my-4">
-                            <a href="" onClick={closeMenu} className="hover:text-gray-700 transition-colors">FAQs</a>
+                            <a href="#faqq" onClick={closeMenu} className="hover:text-gray-700 transition-colors">FAQs</a>
                         </li>
                         {/* Mobile Email Button */}
                         <li className="my-4">
@@ -228,9 +227,9 @@ const Main = () => {
         animate="visible"
         variants={containerVariants}
       >
-        
+
         <FrontPg/>
-       </motion.div> 
+       </motion.div>
 
 
       {/*----------------------------About Page------------------------*/}
@@ -239,11 +238,12 @@ const Main = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         variants={fadeInVariants}
+        className=" mt-30 md:mt-22 lg:mt-18 " 
+        id='aboutt'// Increased margin-top to create a larger gap
       >
-        <div id='aboutt'>
            <About />
-        </div>
-       
+      
+
       </motion.div>
 
       {/*----------------------------Skills------------------------*/}
@@ -262,7 +262,7 @@ const Main = () => {
 
 
 
-    
+
 
 
       {/*----------------------------Projects------------------------*/}
@@ -319,8 +319,8 @@ const Main = () => {
       <div id='contactt'>
            <Contact />
         </div>
-          
-         
+
+
         </motion.div>
       </motion.div>
 
@@ -339,39 +339,9 @@ const Main = () => {
           <div id='footerr'>
            <Footer />
         </div>
-          
+
         </motion.div>
       </motion.div>
-
-      {/* <motion.div
-        className="lg:text-[15px] text-center lg:py-2 bg-white text-black h-[20vh] w-full"
-        id='contactPg'
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={fadeInVariants}
-      >
-        <motion.div
-          className="flex flex-row gap-[0.2rem] lg:gap-1.5 justify-center items-center cursor-pointer animate-bounce"
-          variants={itemVariants}
-        >
-          <a href="https://github.com/arijiiiitttt" target="_blank" rel="noopener noreferrer">
-            <TiSocialInstagram className="lg:size-[1.02rem]" />
-          </a>
-          <a href="https://www.instagram.com/realarijiiiittttroyyy/" target="_blank" rel="noopener noreferrer">
-            <IoLogoGithub className="lg:size-[1.02rem]" />
-          </a>
-          <a href="https://www.linkedin.com/in/realarijiiiitttt/" target="_blank" alt='linkedin'>
-            <BsLinkedin className="lg:size-[1.02rem]" />
-          </a>
-        </motion.div>
-        <motion.p
-          className="text-xs md:text-sm lg:text-sm mt-[0.6px] md:mt-1"
-          variants={itemVariants}
-        >
-          © Made with 💖 by realarijit
-        </motion.p>
-      </motion.div> */}
 
     </div>
   )

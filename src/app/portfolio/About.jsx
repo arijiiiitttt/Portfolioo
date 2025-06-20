@@ -24,10 +24,9 @@ const About = () => {
     <>
     <div
   className="h-110 py-10 pt flex flex-col justify-center items-center w-auto"
-  id="aboutPg"
 >
   {/* Section Heading */}
-  <div className="text-center text-[1.3rem] md:text-[1.99rem] md:px-6 lg:text-[2.5rem] lg:px-10 popBlack font-bold bg-[#defbff]">
+  <div className="text-center text-[1.3rem] md:text-[1.99rem] md:px-6 lg:text-[2.7rem] lg:px-10 popBlack font-bold bg-[#defbff]">
     <h1>Meet the Developer</h1>
   </div>
 
