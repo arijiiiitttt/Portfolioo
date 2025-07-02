@@ -25,18 +25,11 @@ const ParentDiv = ({ onBackgroundChange }) => {
         <Clock />
         <Calendar />
         <BatteryAndImage />
-        
+
         <div></div>
       </div>
-      <div className='h-135 flex flex-col justify-center items-center w-2/5 bg-pink-500'>
-        {/* <ImageScrollBig />
- <MusicPlayer />
-        <ImageScrollOne />
-        <ImageScrollTwo /> */}
-      </div>
-
-      <div className='h-135 flex flex-col  justify-center gap-y-4 items-center w-1/3 bg-gray-500'>
-       
+      <div className='h-135 flex flex-col pt-10 w-3/4 '>
+  
         <div className='flex flex-row justify-center items-center gap-x-5'> {/* Added justify-center and items-center */}
           <img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" />
           {/* Background Changer Button */}
@@ -49,7 +42,7 @@ const ParentDiv = ({ onBackgroundChange }) => {
               <img
                 src="" // Replace with the actual path to your image
                 alt="icon"
-                className="w-12 h-12" 
+                className="w-12 h-12"
               />
             </button>
 
@@ -78,16 +71,16 @@ const ParentDiv = ({ onBackgroundChange }) => {
 
           <img src="./icons/youtube.webp" alt="icon" className=" bg-white  rounded-xl w-12 h-12 hover:" />
           <img src="./icons/gmail.png" alt="icon" className="h-12 w-12 rounded-lg bg-white hover:" />
-           <img src="./icons/facebook.png" alt="icon" className=" w-12 h-12 hover:" />
+          <img src="./icons/facebook.png" alt="icon" className=" w-12 h-12 hover:" />
           <img src="./icons/folder.png" alt="icon" className="h-12 w-12 hover:" />
-           <img src="./icons/instagram.png" alt="icon" className="  w-12 h-12 hover:" />
+          <img src="./icons/instagram.png" alt="icon" className="  w-12 h-12 hover:" />
           <img src="./icons/linkedin.png" alt="icon" className="h-12 w-12  hover:" />
-           <img src="./icons/music.png" alt="icon" className=" w-12 h-12 hover:" />
-          
+          <img src="./icons/music.png" alt="icon" className=" w-12 h-12 hover:" />
+
         </div>
-<div className='flex flex-row'>
-  <img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" />
-</div>
+        <div className='flex flex-row'>
+          <img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" />
+        </div>
 
 
 
