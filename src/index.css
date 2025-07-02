@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.baground-color {
+  background-color: rgba(245, 245, 245, 0.94);
+} 
+
+@font-face {
+    font-family: 'Alfa_Slab_Onee';
+    font-weight: 400;
+    src: url(/public/fonts/Alfa_Slab_Onee/OFL.txt);
+  }
+  .Alfa {
+    font-family: 'Alfa_Slab_Onee', serif;
+    font-weight: 400;
+  }
+
+  
+@font-face {
+    font-family: 'Libre_Caslon_Textt';
+    font-weight: 900;
+    src: url(/public/fonts/Libre_Caslon_Textt/LibreCaslonText-Bold.ttf);
+  }
+  .Libre {
+    font-family: 'Libre_Caslon_Textt', serif;
+    font-weight: 400;
+  }
+  
+@font-face {
+    font-family: 'Rubik_Doodle_Shadow';
+    font-weight: 400;
+    src: url(/public/fonts/Rubik_Doodle_Shadoww/RubikDoodleShadow-Regular.ttf);
+  }
+  .Rubik{
+    font-family: 'Rubik_Doodle_Shadow', serif;
+    font-weight: 400;
+  }
+
+
+  /* .custom-cursor {
+    cursor: url('./logos/a.png'), auto;
+  }
+   */
+
+   @keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+
+
+
+
+
+
