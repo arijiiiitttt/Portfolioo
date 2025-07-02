@@ -25,17 +25,18 @@ const ParentDiv = ({ onBackgroundChange }) => {
         <Clock />
         <Calendar />
         <BatteryAndImage />
+        
         <div></div>
       </div>
       <div className='h-135 flex flex-col justify-center items-center w-2/5 bg-pink-500'>
         {/* <ImageScrollBig />
-
+ <MusicPlayer />
         <ImageScrollOne />
         <ImageScrollTwo /> */}
       </div>
 
-      <div className='h-135 flex flex-col justify-center gap-y-4 items-center w-1/3 bg-gray-500'>
-        <MusicPlayer />
+      <div className='h-135 flex flex-col  justify-center gap-y-4 items-center w-1/3 bg-gray-500'>
+       
         <div className='flex flex-row justify-center items-center gap-x-5'> {/* Added justify-center and items-center */}
           <img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" />
           {/* Background Changer Button */}
@@ -46,7 +47,7 @@ const ParentDiv = ({ onBackgroundChange }) => {
               aria-label="Change background"
             >
               <img
-                src="./icons/setting.png" // Replace with the actual path to your image
+                src="" // Replace with the actual path to your image
                 alt="icon"
                 className="w-12 h-12" 
               />

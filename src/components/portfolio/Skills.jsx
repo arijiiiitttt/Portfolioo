@@ -42,7 +42,7 @@ const Skills = () => {
   }, [isPaused]);
 
   return (
-    <div className="skills flex flex-col items-center bg-white py-10 ">
+    <div className="skills flex flex-col items-center  py-10 ">
       <h4 className="text-2xl font-medium mb-4 anton">Mastered Skills</h4>
 
       <div
