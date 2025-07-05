@@ -222,7 +222,7 @@ const Main = () => {
 
       {/*----------------------------Header------------------------*/}
       {/*-------------------------First Page------------------------*/}
-      {/* <motion.div
+       <motion.div
         // className="min-h-screen bg-white flex flex-col items-center justify-center p-4 font-inter"
         initial="hidden"
         animate="visible"
@@ -230,7 +230,7 @@ const Main = () => {
       >
 
         <FrontPg />
-      </motion.div> */}
+      </motion.div> 
 <div className='h-[3vh]'></div>
 
       {/*----------------------------About Page------------------------*/}
