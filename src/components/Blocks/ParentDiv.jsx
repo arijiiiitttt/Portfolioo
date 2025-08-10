@@ -29,9 +29,9 @@ const ParentDiv = ({ onBackgroundChange }) => {
         <div></div>
       </div>
       <div className='h-135 flex flex-col pt-10 w-3/4 '>
-  
+
         <div className='flex flex-row justify-center items-center gap-x-5'> {/* Added justify-center and items-center */}
-          <img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" />
+       <a href='/notfound'><img src="./logos/a.png" alt="icon" className="w-18 h-18 hover:" /></a>
           {/* Background Changer Button */}
           <div className="relative">
             <button
@@ -69,24 +69,32 @@ const ParentDiv = ({ onBackgroundChange }) => {
             )}
           </div>
 
-          <img src="./icons/youtube.webp" alt="icon" className=" bg-white  rounded-xl w-12 h-12 hover:" />
+          <a href='/underprocess'>
+            <img src="./icons/youtube.webp" alt="icon" href='/underprocess' className=" bg-white  rounded-xl w-12 h-12 hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/gmail.png" alt="icon" className="h-12 w-12 rounded-lg bg-white hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/facebook.png" alt="icon" className=" w-12 h-12 hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/folder.png" alt="icon" className="h-12 w-12 hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/instagram.png" alt="icon" className="  w-12 h-12 hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/linkedin.png" alt="icon" className="h-12 w-12  hover:" />
+          </a>
+          <a href='/underprocess'>
           <img src="./icons/music.png" alt="icon" className=" w-12 h-12 hover:" />
-
+</a>
         </div>
         <div className='flex flex-row'>
-          <img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" />
+          <a href='/underprocess'><img src="./icons/notion.png" alt="icon" className="h-12 w-20 hover:" /></a>
+                  <a href='https://leetcode.com/u/realarijiiiittttroyyyy/' target='_blank'><img src="./icons/LeetCode.png" alt="icon" className="h-12 w-12 rounded-lg bg-white p-1 hover:" /></a>
         </div>
-
-
-
-
-
-
       </div>
     </div>
   );

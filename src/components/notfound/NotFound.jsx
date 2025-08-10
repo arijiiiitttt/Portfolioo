@@ -23,7 +23,7 @@ const NotFound = () => {
             We couldn't find the page you were looking for.
           </p>
           <a
-            href="/"
+            href="/portfolio"
             className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-full shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-900 focus:ring-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

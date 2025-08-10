@@ -53,7 +53,7 @@ const About = () => {
       <div className="flex flex-row gap-4 md:gap-6 font-medium mt-6">
         <button
           className="hover:bg-black bg-[#ff0000] px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-3 border-2 shadow-md border-white text-white rounded-lg text-sm md:text-base lg:text-xl transition-all"
-          onMouseEnter={playHover}
+           onMouseEnter={playHover}
           onClick={handleButtonClick}
         >
           Hire Me

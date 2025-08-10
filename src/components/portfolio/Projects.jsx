@@ -11,86 +11,10 @@ const projectsData = [
     live: true,
     liveLink: "https://example.com/ecommerce",
     githubLink: "https://github.com/user/ecommerce",
-    techStack: ["html", "css", "javascript", "react", "nodejs", "mongodb"],
+    techStack: ["html", "css", "js", "react", "nodejs", "mongodb"],
   },
-  {
-    id: 2,
-    title: "Task Manager App",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/0000FF/FFFFFF?text=TM", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/7B68EE/FFFFFF?text=TaskApp", // Placeholder image
-    description:
-      "A real-time productivity application enabling users to manage tasks, set deadlines, and collaborate with team members. Built with React and Firebase.",
-    live: false,
-    liveLink: "#",
-    githubLink: "https://github.com/user/task-manager",
-    techStack: ["react", "firebase", "redux", "tailwind", "vscode"],
-  },
-  {
-    id: 3,
-    title: "Portfolio Website",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/008000/FFFFFF?text=PW", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/ADD8E6/000000?text=Portfolio",
-    description:
-      "My personal portfolio website showcasing various projects, skills and contact information. Developed using modern web technologies.",
-    live: true,
-    liveLink: "https://example.com/portfolio",
-    githubLink: "https://github.com/user/portfolio",
-    techStack: ["html", "css", "javascript", "react", "vite", "git", "github"],
-  },
-  {
-    id: 4,
-    title: "Weather Dashboard",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/FFFF00/000000?text=WD", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/FFD700/000000?text=Weather",
-    description:
-      "An interactive weather dashboard that provides real-time weather updates based on user location or city search. Integrates with a third-party weather API.",
-    live: true,
-    liveLink: "https://example.com/weather",
-    githubLink: "https://github.com/user/weather-app",
-    techStack: ["html", "css", "javascript", "api"],
-  },
-  {
-    id: 5,
-    title: "Recipe Finder",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/00FF00/000000?text=RF", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/90EE90/000000?text=Recipes",
-    description:
-      "A web application to search for recipes based on ingredients or cuisine type. Utilizes a recipe API to fetch and display detailed cooking instructions.",
-    live: true,
-    liveLink: "https://example.com/recipes",
-    githubLink: "https://github.com/user/recipe-finder",
-    techStack: ["react", "api", "css-modules"],
-  },
-  {
-    id: 6,
-    title: "Simple Blog",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/FF0000/FFFFFF?text=SB", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/F08080/FFFFFF?text=Blog",
-    description:
-      "A lightweight blog platform allowing users to create, publish, and manage posts. Features a clean interface and Markdown support.",
-    live: false,
-    liveLink: "#",
-    githubLink: "https://github.com/user/simple-blog",
-    techStack: ["nodejs", "express", "ejs", "mongodb"],
-  },
-  {
-    id: 7,
-    title: "Online Quiz System",
-    headerVideo: null, // No video for this project
-    avatarImage: "https://via.placeholder.com/64/00FFFF/000000?text=OQ", // Placeholder avatar
-    image: "https://via.placeholder.com/300x180/87CEEB/000000?text=Quiz",
-    description:
-      "An interactive online quiz system with multiple categories and difficulty levels. Tracks user scores and provides instant feedback.",
-    live: true,
-    liveLink: "https://example.com/quiz",
-    githubLink: "https://github.com/user/quiz-system",
-    techStack: ["javascript", "html", "css"],
-  },
+
+ 
 ];
 
 const Projects = () => {
@@ -144,21 +68,17 @@ const Projects = () => {
                   alt={project.title}
                   className="w-14 h-14 absolute -top-7 left-3 rounded-full border-3 border-white shadow-lg object-cover transform transition-transform duration-200 hover:scale-105" // Reduced size and border
                 />
-
-                {/* Text content (Title, Dot, GitHub, Description) */}
-                <div className="pt-8"> {/* Reduced padding-top */}
+                <div className="pt-8"> 
                   <div className="flex items-center mb-1">
-                    {/* Title with sticky Live Status Dot */}
-                    <h2 className="text-base font-bold text-gray-900 flex-grow"> {/* Reduced font size */}
+                    <h2 className="text-base font-bold text-gray-900 flex-grow"> 
                       {project.title}
                       <span
-                        className={`inline-block w-2.5 h-2.5 rounded-full ml-1.5 ${ // Slightly reduced size and margin
+                        className={`inline-block w-2.5 h-2.5 rounded-full ml-1.5 ${ 
                           project.live ? "bg-green-500 animate-pulse-slow" : "bg-red-500"
                         }`}
                         title={project.live ? "Live Project" : "Website Not Available"}
                       ></span>
                     </h2>
-                    {/* GitHub Icon at the end of the title line - Improved hover effect */}
                     <a
                       href={project.githubLink}
                       target="_blank"
